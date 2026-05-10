@@ -199,6 +199,8 @@ namespace MediaBrowser.MediaEncoding.Encoder
                 }
             }
 
+            ffmpegPath = ResolveEncoderPath(ffmpegPath);
+
             if (!ValidatePath(ffmpegPath))
             {
                 _ffmpegPath = null;
@@ -303,6 +305,25 @@ namespace MediaBrowser.MediaEncoding.Encoder
 
             _ffmpegPath = path;
             return true;
+        }
+
+        private string ResolveEncoderPath(string path)
+        {
+            if (string.IsNullOrWhiteSpace(path)
+                || !_fileSystem.DirectoryExists(path))
+            {
+                return path;
+            }
+
+            var executablePath = GetEncoderPathFromDirectory(path, "ffmpeg")
+                                 ?? GetEncoderPathFromDirectory(path, "ffmpeg", recursive: true);
+            if (!string.IsNullOrWhiteSpace(executablePath))
+            {
+                _logger.LogInformation("FFmpeg: Resolved directory path {DirectoryPath} to executable {ExecutablePath}", path, executablePath);
+                return executablePath;
+            }
+
+            return path;
         }
 
         private string GetEncoderPathFromDirectory(string path, string filename, bool recursive = false)

@@ -252,7 +252,7 @@ namespace Emby.Server.Implementations
         /// Gets the current application name.
         /// </summary>
         /// <value>The application name.</value>
-        public string ApplicationProductName { get; } = FileVersionInfo.GetVersionInfo(Assembly.GetEntryAssembly().Location).ProductName;
+        public string ApplicationProductName { get; } = "Kelso Media Server";
 
         public string SystemId => _deviceId.Value;
 

@@ -188,6 +188,12 @@ namespace MediaBrowser.MediaEncoding.Encoder
             { "libpostproc", new Version(55, 9) }
         };
 
+        // Libraries that are not required for a valid FFmpeg build (e.g. stripped from some distributions)
+        private static readonly HashSet<string> _optionalLibraries = new HashSet<string>(StringComparer.Ordinal)
+        {
+            "libpostproc"
+        };
+
         private readonly ILogger _logger;
 
         private readonly string _encoderPath;
@@ -355,6 +361,7 @@ namespace MediaBrowser.MediaEncoding.Encoder
 
             foreach (var minimumVersion in _ffmpegMinimumLibraryVersions)
             {
+                var isOptional = _optionalLibraries.Contains(minimumVersion.Key);
                 if (versionMap.TryGetValue(minimumVersion.Key, out var foundVersion))
                 {
                     if (foundVersion >= minimumVersion.Value)
@@ -364,13 +371,23 @@ namespace MediaBrowser.MediaEncoding.Encoder
                     else
                     {
                         _logger.LogWarning("Found {Library} version {FoundVersion} lower than recommended version {MinimumVersion}", minimumVersion.Key, foundVersion, minimumVersion.Value);
-                        allVersionsValidated = false;
+                        if (!isOptional)
+                        {
+                            allVersionsValidated = false;
+                        }
                     }
                 }
                 else
                 {
-                    _logger.LogError("{Library} version not found", minimumVersion.Key);
-                    allVersionsValidated = false;
+                    if (isOptional)
+                    {
+                        _logger.LogInformation("Optional {Library} version not found, skipping", minimumVersion.Key);
+                    }
+                    else
+                    {
+                        _logger.LogError("{Library} version not found", minimumVersion.Key);
+                        allVersionsValidated = false;
+                    }
                 }
             }
 
