@@ -10,6 +10,7 @@ Add the following line under "Template Repositories"
 
 https://github.com/jellyfin/jellyfin/tree/master/deployment/unraid/docker-templates
 
-Click save than click on Add Container and select Kelso Media Server.
+Click save then click on Add Container and select Kelso Media Server.
+Note: the template references the upstream repository for template updates; repository links and image names are unchanged.
 
 Adjust to your paths to your liking and off you go!

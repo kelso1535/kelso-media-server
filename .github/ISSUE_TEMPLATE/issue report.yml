@@ -8,7 +8,7 @@ body:
     attributes:
       value: |
         ### Thank you for taking the time to report an issue!
-        Please keep in mind that Jellyfin is a [free and open-source](https://jellyfin.org/docs/general/about) project, made up entirely and exclusively of **volunteers** who donate their free time to the project.
+        Please keep in mind that Kelso Media Server is a [free and open-source](https://jellyfin.org/docs/general/about) project, made up entirely of **volunteers** who donate their free time to the project. We appreciate clear, well-formed reports and thank you for helping improve Kelso Media Server.
   - type: checkboxes
     id: before-posting
     attributes:
@@ -45,7 +45,7 @@ body:
       label: Description of the bug
       description: Please provide a detailed description on the bug you encountered, in a readable and comprehensible way.
       placeholder: |
-        After upgrading to version x.y.z of Jellyfin, the "login disclaimer" is showing incorrect text. It appears to me that it is appending the server name to the end of the login disclaimer, and showing that to a user. It might be a regression from pull request x. I have tried rebooting my host as well as my container multiple times. I tested this functionality on different clients, and it happens to all the tested clients (client x, y, z), that support the login disclaimer functionality. This makes me believe it is a server side issue.
+        After upgrading to version x.y.z of Kelso Media Server, the "login disclaimer" is showing incorrect text. It appears to me that it is appending the server name to the end of the login disclaimer, and showing that to a user. It might be a regression from pull request x. I have tried rebooting my host multiple times and tested with different clients. This makes me believe it is a server-side issue.
     validations:
       required: true
   - type: textarea
@@ -54,13 +54,12 @@ body:
       label: Reproduction steps
       description: Reproduction steps should be complete and self-contained. Anyone can reproduce this issue by following these steps. Furthermore, the steps should be clear and easy to follow.
       placeholder: |
-        1. Sign in on the Jellyfin web client, with an admin account, using a browser of your choice.
+        1. Sign in on the Kelso Media Server web client with an admin account, using a browser of your choice.
         2. Navigate to the dashboard.
-        3. Select "general".
+        3. Select "General".
         4. Change the login disclaimer to something like "I am a cool disclaimer!"
         5. Save the settings.
-        6. Sign out.
-        7. Make sure you are on the sign in screen. Otherwise, navigate to the sign in screen manually.
+        6. Sign out and return to the sign-in screen.
     validations:
       required: true
   - type: textarea
@@ -69,7 +68,7 @@ body:
       label: What is the current _bug_ behavior?
       description: Write down the incorrect behavior that currently happens after following the reproduction steps.
       placeholder: |
-        The login disclaimer on the sign in screen has the server name appended to the text. The text shown is: "I am a cool disclaimer!jellyfinserver".
+        The login disclaimer on the sign-in screen has the server name appended to the text. For example: "I am a cool disclaimer!kelsoserver".
     validations:
       required: true
   - type: textarea
@@ -125,10 +124,10 @@ body:
       required: true
   - type: textarea
     id: environment-information
-    attributes:
+      attributes:
       label: Environment
       description: |
-        Accurately fill in as much environment details as possible. If a certain environment field is not shown in the template below, but you consider useful information, please include it.
+        Accurately fill in as many environment details as possible. If a certain environment field below is not shown but is useful, please include it.
         Examples:
         - **OS**: [e.g. Debian 11, Windows 10]
         - **Linux Kernel**: [e.g. none, 5.15, 6.1, etc.]
@@ -192,7 +191,7 @@ body:
     id: ffmpeg-logs
     attributes:
       label: FFmpeg logs
-      description: Relevant FFmpeg log output. This can be found in Dashboard > Logs > FFmpeg*.log. This field is considered mandatory for transcoding related issues. It's also important to include the specific codec details.
+      description: Relevant FFmpeg log output. This can be found in Dashboard > Logs > FFmpeg*.log. This field is mandatory for transcoding-related issues. Please include the specific codec details and any FFmpeg command lines used.
       render: shell
   - type: textarea
     id: browser-logs

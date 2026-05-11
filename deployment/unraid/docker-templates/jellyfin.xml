@@ -8,11 +8,11 @@
 	Kelso Media Server is The Free Software Media Browser	Converted By Community Applications	Always verify this template (and values) against the dockerhub support page for the container!![br][br]
   You can add as many mount points as needed for recordings, movies ,etc. [br][br]
   [b][span style='color: #E80000;']Directions:[/span][/b][br]
-  [b]/config[/b] : This is where Jellyfin will store it's databases and configuration.[br][br]
-  [b]Port[/b] : This is the default port for Jellyfin. (Will add ssl port later)[br][br]
-  [b]Media[/b] : This is the mounting point of your media. When you access it in Jellyfin it will be /media or whatever you chose for a mount point[br][br]
-  [b]Cache[/b] : This is where Jellyfin will store and manage cached files like images to serve to clients. This is not where all images are stored.[br][br]
-  [b]Tip:[/b] You can add more volume mappings if you wish Jellyfin has access to it.
+  [b]/config[/b] : This is where Kelso Media Server will store its databases and configuration.[br][br]
+  [b]Port[/b] : This is the default port for Kelso Media Server. (Will add ssl port later)[br][br]
+  [b]Media[/b] : This is the mounting point of your media. When you access it in Kelso Media Server it will be /media or whatever you chose for a mount point[br][br]
+  [b]Cache[/b] : This is where Kelso Media Server will store and manage cached files like images to serve to clients. This is not where all images are stored.[br][br]
+  [b]Tip:[/b] You can add more volume mappings if you wish Kelso Media Server has access to it.
   </Description>
   <Overview>
     Kelso Media Server is a home media server built on top of other popular open source technologies such as Service Stack, jQuery, jQuery mobile, and Mono and will remain completely free!
