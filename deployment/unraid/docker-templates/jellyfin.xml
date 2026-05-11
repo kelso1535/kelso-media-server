@@ -3,9 +3,9 @@
   <TemplateURL>https://raw.githubusercontent.com/jellyfin/jellyfin/deployment/unraid/docker-templates/jellyfin.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
-  <Name>Jellyfin</Name>
+  <Name>Kelso Media Server</Name>
   <Description>
-	Jellyfin is The Free Software Media Browser	Converted By Community Applications	Always verify this template (and values) against the dockerhub support page for the container!![br][br]
+	Kelso Media Server is The Free Software Media Browser	Converted By Community Applications	Always verify this template (and values) against the dockerhub support page for the container!![br][br]
   You can add as many mount points as needed for recordings, movies ,etc. [br][br]
   [b][span style='color: #E80000;']Directions:[/span][/b][br]
   [b]/config[/b] : This is where Jellyfin will store it's databases and configuration.[br][br]
@@ -15,7 +15,7 @@
   [b]Tip:[/b] You can add more volume mappings if you wish Jellyfin has access to it.
   </Description>
   <Overview>
-    Jellyfin Server is a home media server built on top of other popular open source technologies such as Service Stack, jQuery, jQuery mobile, and Mono and will remain completely free!
+    Kelso Media Server is a home media server built on top of other popular open source technologies such as Service Stack, jQuery, jQuery mobile, and Mono and will remain completely free!
   </Overview>
   <Support>https://www.reddit.com/r/jellyfin/</Support>
   <Registry>https://hub.docker.com/r/jellyfin/jellyfin/</Registry>

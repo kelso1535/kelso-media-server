@@ -1,4 +1,4 @@
-# Jellyfin fuzzing
+# Kelso Media Server fuzzing
 
 ## Setup
 
