@@ -1,4 +1,4 @@
-# Kelso Media Server fuzzing
+# Arafura Core fuzzing
 
 ## Setup
 

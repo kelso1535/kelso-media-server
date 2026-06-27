@@ -8,7 +8,7 @@ body:
     attributes:
       value: |
         ### Thank you for taking the time to report an issue!
-        Please keep in mind that Kelso Media Server is a [free and open-source](https://jellyfin.org/docs/general/about) project, made up entirely of **volunteers** who donate their free time to the project. We appreciate clear, well-formed reports and thank you for helping improve Kelso Media Server.
+        Please keep in mind that Arafura Core is a [free and open-source](https://jellyfin.org/docs/general/about) project, made up entirely of **volunteers** who donate their free time to the project. We appreciate clear, well-formed reports and thank you for helping improve Arafura Core.
   - type: checkboxes
     id: before-posting
     attributes:
@@ -45,7 +45,7 @@ body:
       label: Description of the bug
       description: Please provide a detailed description on the bug you encountered, in a readable and comprehensible way.
       placeholder: |
-        After upgrading to version x.y.z of Kelso Media Server, the "login disclaimer" is showing incorrect text. It appears to me that it is appending the server name to the end of the login disclaimer, and showing that to a user. It might be a regression from pull request x. I have tried rebooting my host multiple times and tested with different clients. This makes me believe it is a server-side issue.
+        After upgrading to version x.y.z of Arafura Core, the "login disclaimer" is showing incorrect text. It appears to me that it is appending the server name to the end of the login disclaimer, and showing that to a user. It might be a regression from pull request x. I have tried rebooting my host multiple times and tested with different clients. This makes me believe it is a server-side issue.
     validations:
       required: true
   - type: textarea
@@ -54,7 +54,7 @@ body:
       label: Reproduction steps
       description: Reproduction steps should be complete and self-contained. Anyone can reproduce this issue by following these steps. Furthermore, the steps should be clear and easy to follow.
       placeholder: |
-        1. Sign in on the Kelso Media Server web client with an admin account, using a browser of your choice.
+        1. Sign in on the Arafura Core web client with an admin account, using a browser of your choice.
         2. Navigate to the dashboard.
         3. Select "General".
         4. Change the login disclaimer to something like "I am a cool disclaimer!"

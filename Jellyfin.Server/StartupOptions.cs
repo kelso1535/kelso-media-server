@@ -28,7 +28,7 @@ namespace Jellyfin.Server
         /// Gets or sets the path to the web directory.
         /// </summary>
         /// <value>The path to the web directory.</value>
-        [Option('w', "webdir", Required = false, HelpText = "Path to the Kelso Media Server web UI resources.")]
+        [Option('w', "webdir", Required = false, HelpText = "Path to the Arafura Core web UI resources.")]
         public string? WebDir { get; set; }
 
         /// <summary>
@@ -61,11 +61,11 @@ namespace Jellyfin.Server
         public bool IsService { get; set; }
 
         /// <inheritdoc />
-        [Option("package-name", Required = false, HelpText = "Used when packaging Kelso Media Server (example, synology).")]
+        [Option("package-name", Required = false, HelpText = "Used when packaging Arafura Core (example, synology).")]
         public string? PackageName { get; set; }
 
         /// <inheritdoc />
-        [Option("published-server-url", Required = false, HelpText = "Kelso Media Server URL to publish via auto discover process")]
+        [Option("published-server-url", Required = false, HelpText = "Arafura Core URL to publish via auto discover process")]
         public string? PublishedServerUrl { get; set; }
 
         /// <summary>
@@ -75,16 +75,16 @@ namespace Jellyfin.Server
         public bool NoDetectNetworkChange { get; set; }
 
         /// <summary>
-        /// Gets or sets the path to a Kelso Media Server backup archive to restore the application to.
+        /// Gets or sets the path to a Arafura Core backup archive to restore the application to.
         /// </summary>
-        [Option("restore-archive", Required = false, HelpText = "Path to a Kelso Media Server backup archive to restore from")]
+        [Option("restore-archive", Required = false, HelpText = "Path to a Arafura Core backup archive to restore from")]
         public string? RestoreArchive { get; set; }
 
         /// <summary>
         /// Gets or sets the mode of operation the server should perform when started.
         /// Defaults to: <see cref="StartupMode.MediaServer"/>.
         /// </summary>
-        [Option("mode", Required = false, HelpText = "Mode which selects what action the Kelso Media Server should perform when started.")]
+        [Option("mode", Required = false, HelpText = "Mode which selects what action the Arafura Core should perform when started.")]
         public StartupMode? StartupMode { get; set; }
 
         /// <summary>

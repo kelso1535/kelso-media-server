@@ -199,7 +199,7 @@ namespace Jellyfin.Server.Extensions
                 var version = typeof(ApplicationHost).Assembly.GetName().Version?.ToString(3) ?? "0.0.1";
                 c.SwaggerDoc("api-docs", new OpenApiInfo
                 {
-                    Title = "Kelso Media Server API",
+                    Title = "Arafura Core API",
                     Version = version,
                     Extensions = new Dictionary<string, IOpenApiExtension>
                     {

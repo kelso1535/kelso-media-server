@@ -1,4 +1,4 @@
-<h1 align="center">Kelso Media Server</h1>
+<h1 align="center">Arafura Core</h1>
 <h3 align="center">The Free Software Media System</h3>
 
 ---
@@ -39,7 +39,7 @@
 
 ---
 
-Kelso Media Server is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps. Kelso Media Server is descended from Emby's 3.5.2 release and ported to the .NET platform to enable full cross-platform support.
+Arafura Core is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps. Arafura Core is descended from Emby's 3.5.2 release and ported to the .NET platform to enable full cross-platform support.
 
 There are no strings attached, no premium licenses or features, and no hidden agendas: just a team that wants to build something better and work together to achieve it. We welcome anyone who is interested in joining us in our quest!
 
@@ -57,7 +57,7 @@ Check out our <a href="https://jellyfin.org/contribute">contributing choose-your
 <strong>New idea or improvement?</strong><br/>
 Check out our <a href="https://features.jellyfin.org/?view=most-wanted">feature request hub</a>.<br/>
 
-**Don't see Kelso Media Server in your language?**<br/>
+**Don't see Arafura Core in your language?**<br/>
 Check out our <a href="https://translate.jellyfin.org">Weblate instance</a> to help translate Jellyfin and its subprojects.<br/>
 
 <a href="https://translate.jellyfin.org/engage/jellyfin/?utm_source=widget">
@@ -66,9 +66,9 @@ Check out our <a href="https://translate.jellyfin.org">Weblate instance</a> to h
 
 ---
 
-## Kelso Media Server
+## Arafura Core
 
-This repository contains the code for Kelso Media Server's backend server. Note that this is only one of many projects under the Jellyfin GitHub [organization](https://github.com/jellyfin/) on GitHub. If you want to contribute, you can start by checking out our [documentation](https://jellyfin.org/docs/general/contributing/index.html) to see what to work on.
+This repository contains the code for Arafura Core's backend server. Note that this is only one of many projects under the Jellyfin GitHub [organization](https://github.com/jellyfin/) on GitHub. If you want to contribute, you can start by checking out our [documentation](https://jellyfin.org/docs/general/contributing/index.html) to see what to work on.
 
 ## Server Development
 
@@ -155,12 +155,12 @@ As Jellyfin will run on a container on a GitHub hosted server, JF needs to handl
 **NOTE:** When first opening the server instance with any WebUI, you will be sent to the login instead of the setup page. Refresh the login page once and you should be redirected to the Setup.
 
 There are two configurations for you to choose from.
-#### Default - Development Kelso Media Server
+#### Default - Development Arafura Core
 This creates a container that has everything to run and debug the Jellyfin Media server but does not setup anything else. Each time you create a new container you have to run through the whole setup again. There is also no ffmpeg, webclient or media preloaded. Use the `.NET Launch (nowebclient)` launch config to start the server.
 
 > Keep in mind that as this has no web client you have to connect to it via an external client. This can be just another codespace container running the WebUI. vuejs does not work from the get-go as it does not support the setup steps.
 
-#### Development Kelso Media Server ffmpeg
+#### Development Arafura Core ffmpeg
 This extends the default server with a default installation of ffmpeg6 though the means described here: https://jellyfin.org/docs/general/installation/linux#repository-manual
 If you want to install a specific ffmpeg version, follow the comments embedded in the `.devcontainer/Dev - Server Ffmpeg/install.ffmpeg.sh` file.
 

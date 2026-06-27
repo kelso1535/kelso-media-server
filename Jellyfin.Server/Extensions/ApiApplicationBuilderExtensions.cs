@@ -44,14 +44,14 @@ namespace Jellyfin.Server.Extensions
                 })
                 .UseSwaggerUI(c =>
                 {
-                    c.DocumentTitle = "Kelso Media Server API";
-                    c.SwaggerEndpoint($"/{baseUrl}api-docs/openapi.json", "Kelso Media Server API");
+                    c.DocumentTitle = "Arafura Core API";
+                    c.SwaggerEndpoint($"/{baseUrl}api-docs/openapi.json", "Arafura Core API");
                     c.InjectStylesheet($"/{baseUrl}api-docs/swagger/custom.css");
                     c.RoutePrefix = "api-docs/swagger";
                 })
                 .UseReDoc(c =>
                 {
-                    c.DocumentTitle = "Kelso Media Server API";
+                    c.DocumentTitle = "Arafura Core API";
                     c.SpecUrl($"/{baseUrl}api-docs/openapi.json");
                     c.InjectStylesheet($"/{baseUrl}api-docs/redoc/custom.css");
                     c.RoutePrefix = "api-docs/redoc";

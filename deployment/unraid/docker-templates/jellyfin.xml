@@ -3,19 +3,19 @@
   <TemplateURL>https://raw.githubusercontent.com/jellyfin/jellyfin/deployment/unraid/docker-templates/jellyfin.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
-  <Name>Kelso Media Server</Name>
+  <Name>Arafura Core</Name>
   <Description>
-	Kelso Media Server is The Free Software Media Browser	Converted By Community Applications	Always verify this template (and values) against the dockerhub support page for the container!![br][br]
+	Arafura Core is The Free Software Media Browser	Converted By Community Applications	Always verify this template (and values) against the dockerhub support page for the container!![br][br]
   You can add as many mount points as needed for recordings, movies ,etc. [br][br]
   [b][span style='color: #E80000;']Directions:[/span][/b][br]
-  [b]/config[/b] : This is where Kelso Media Server will store its databases and configuration.[br][br]
-  [b]Port[/b] : This is the default port for Kelso Media Server. (Will add ssl port later)[br][br]
-  [b]Media[/b] : This is the mounting point of your media. When you access it in Kelso Media Server it will be /media or whatever you chose for a mount point[br][br]
-  [b]Cache[/b] : This is where Kelso Media Server will store and manage cached files like images to serve to clients. This is not where all images are stored.[br][br]
-  [b]Tip:[/b] You can add more volume mappings if you wish Kelso Media Server has access to it.
+  [b]/config[/b] : This is where Arafura Core will store its databases and configuration.[br][br]
+  [b]Port[/b] : This is the default port for Arafura Core. (Will add ssl port later)[br][br]
+  [b]Media[/b] : This is the mounting point of your media. When you access it in Arafura Core it will be /media or whatever you chose for a mount point[br][br]
+  [b]Cache[/b] : This is where Arafura Core will store and manage cached files like images to serve to clients. This is not where all images are stored.[br][br]
+  [b]Tip:[/b] You can add more volume mappings if you wish Arafura Core has access to it.
   </Description>
   <Overview>
-    Kelso Media Server is a home media server built on top of other popular open source technologies such as Service Stack, jQuery, jQuery mobile, and Mono and will remain completely free!
+    Arafura Core is a home media server built on top of other popular open source technologies such as Service Stack, jQuery, jQuery mobile, and Mono and will remain completely free!
   </Overview>
   <Support>https://www.reddit.com/r/jellyfin/</Support>
   <Registry>https://hub.docker.com/r/jellyfin/jellyfin/</Registry>
